@@ -1,6 +1,6 @@
 pipeline {
   //  agent any
-    agent { node { label 'workstation1' } }
+    agent { node { label '172.31.81.140' } }
 
    // environment {
    //    Test_URL = " google.com"
