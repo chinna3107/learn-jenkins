@@ -2,16 +2,16 @@ pipeline {
   //  agent any
     agent { node {label 'workstation1'} }
 
-    environment {
-       Test_URL = " google.com"
-   }
+   // environment {
+   //    Test_URL = " google.com"
+   //}
 
     stages {
         stage('Compile') {
             steps {
-                //echo 'Hello World'
-                //error ' This is an error '
-                echo Test_URL
+                echo 'Hello World'
+                error ' This is an error '
+                // echo Test_URL
             }
         }
     }
